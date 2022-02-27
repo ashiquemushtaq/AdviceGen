@@ -15,11 +15,6 @@ body{
 }
 
 .card{
-    /* margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     background-color: rgba(49,58,73,255);
     border-radius: 10px;
     display: flex;
@@ -46,6 +41,7 @@ body{
 }
 
 button{
+    display: flex;
     background-color: hsl(150, 100%, 66%);
     outline: none;
     border: none;
@@ -55,9 +51,8 @@ button{
 }
 
 button:hover{
-    background-color: hsl(150, 100%, 46%);
+    box-shadow: 1px 1px 15px 1px hsl(150, 100%, 50%);
 }
-
 
 @media only screen and (max-width: 580px){
 
