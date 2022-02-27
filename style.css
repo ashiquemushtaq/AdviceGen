@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: rgba(32,38,50,255);
+    padding: 0 6rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-color: rgba(49,58,73,255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding:1.5rem 3rem;
+    box-shadow: rgba(30,36,48,255) 0px 7px 29px 0px;
+}
+
+.title{
+    color: hsl(150, 100%, 66%);
+}
+
+.quote{
+    color:hsl(193, 38%, 86%);
+    font-size: 28px;
+    text-align: center;
+}
+
+#div-mobile{
+    display: none;
+    width: 100%;
+}
+
+button{
+    background-color: hsl(150, 100%, 66%);
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(150, 100%, 46%);
+}
+
+
+@media only screen and (max-width: 580px){
+
+    body{
+        padding:0 1.5rem;
+        flex-direction: column;
+    }
+
+    .card{
+        padding:1.2rem 0.8rem;
+    }
+
+    .quote{
+        font-size: 22px;
+    }
+
+    #div-desktop{
+        display: none;
+    }
+
+    #div-mobile{
+        display: block;
+    }
+}
